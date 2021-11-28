@@ -69,7 +69,7 @@
 <div class="wrapper">
 
   <!-- Preloader -->
-  <div class="preloader flex-column justify-content-center align-items-center">
+  <div class="preloaders flex-column justify-content-center align-items-center">
     <i class="fas fa-info fa-2x animation__shake"></i>
   </div>
 
@@ -200,27 +200,44 @@
                 <table class="table table-head-fixed text-nowrap">
                   <thead>
                   <tr>
-                    <th>Id</th>
-                    <th>Nombre</th>
-                    <th>CAtegoria</th>
-                    <th>serie</th>
-                    <th>Stock</th>
+                    <th>Identificador</th>
+                    <th>nombre</th>
+                    <th>categoria</th>
+                    <th>no_serie</th>
+                    <th>cantidad</th>
+                    <th>fecha</th>
+                    <th>medida</th>
+                    <th>marca</th>
+                    <th>modelo</th>
+                    <th>origen</th>
+                    <th>ubicacion</th>
+                    <th>estado_producto</th>
+                    <th>color</th>
                   </tr>
                   </thead>
                   <tbody>
+                  <?php
 
+	             include('Controller/Facade_Registrar_Producto.php');
+                 $producto = new Facade();
+                $arr = $producto ->todos();
 
-
-
-
+                  foreach($arr as $fila){
+                  ?>
 
                   <tr>
-                    <td>982</td>
-                    <td>Rocky Doe</td>
-                    <td>11-7-2014</td>
-                    <td><span class="tag tag-danger">Denied</span></td>
-                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                    <td><?PHP echo $fila[0];?></td>
+                    <td><?PHP echo $fila[1];?></td>
+                    <td><?PHP echo $fila[2];?></td>
+                    <td><?PHP echo $fila[3];?></td>
+                    <td><?PHP echo $fila[4];?></td>
+                    <td><?PHP echo $fila[5];?></td>
+                    <td><?PHP echo $fila[6];?></td>
+                    <td><?PHP echo $fila[7];?></td>
+                    <td><?PHP echo $fila[8];?></td>
+                    <td><?PHP echo $fila[9];?></td>
                   </tr>
+                  <?php } ?>
                   </tbody>
                 </table>
               </div>
@@ -242,7 +259,7 @@
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2021 <b>SisInv </a>.</strong>
+    <strong>Copyright &copy; 2014-2021 <b>SisInv </b>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
       <b>Version</b> 0.0.1
