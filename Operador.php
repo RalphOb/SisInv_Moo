@@ -7,6 +7,7 @@ include_once 'Serviciok1.php';
 //include_once 'Serviciok2.php';
 
 //KIT-1
+
 $ServicioFactory = new ServicioFactory1();
 $Servicio = $ServicioFactory->orderService('Regular');
 $Servicio->getName();
@@ -19,4 +20,3 @@ $Servicio->getName();
 
 
 ?>
-

@@ -69,7 +69,7 @@
 <div class="wrapper">
 
   <!-- Preloader -->
-  <div class="preloader flex-column justify-content-center align-items-center">
+  <div class="preloaders flex-column justify-content-center align-items-center">
     <i class="fas fa-info fa-2x animation__shake"></i>
   </div>
 
@@ -172,7 +172,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">INVENTARIO</h1>
+            <h1 class="m-0">Crear Orden</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -191,87 +191,30 @@
 
         <div class="row">
           <div class="col-12">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Registro de producto</h3>
-              </div>
-              <!-- /.card-header -->
-              <form method="post" action="Controller/Facade.php">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label >Nombre</label>
-                      <input type="" class="form-control" name="nombre">
-                    </div>
-
-                    <div class="form-group">
-                      <label >Categoria</label>
-                      <input type="" class="form-control" name="categoria" >
-                    </div>
-                    <div class="form-group">
-                      <label >No.Serie</label>
-                      <input type="" class="form-control" name="no_serie" >
-                    </div>
-                    <div class="form-group">
-                      <label >Cantidad</label>
-                      <input type="number" class="form-control" name="cantidad" >
-                    </div>
-                    <!-- /.form-group -->
-                    <div class="form-group">
-                      <label >Fecha</label>
-                      <input type="date" class="form-control" name="fecha" >
-                    </div>
-
-                    <div class="form-group">
-                      <label >Medida</label>
-                      <input type="" class="form-control" name="medida"  >
-                    </div>
-                    <!-- /.form-group -->
+              <div class="card">
+                  <div class="card-header">
+                      <h3 class="card-title">Pre-Paquetes</h3>
                   </div>
-                  <!-- /.col -->
-                  <div class="col-md-6">
+                  <div class="card-body">
+                      <center>
+                          <a data-toggle="modal" data-target="#modal-lg"class="btn btn-app">
+                              <i class="fas fa-box"></i> Paquete: Regular
+                          </a>
+                          <a class="btn btn-app">
+                              <i class="fas fa-box"></i> Paquete: Preventivo
+                          </a>
+                          <a class="btn btn-app">
+                              <i class="fas fa-box"></i> Custome
+                          </a>
+                      </center>
 
 
-                    <div class="form-group">
-                      <label >Modelo</label>
-                      <input type="" class="form-control" name="modelo"  >
-                    </div>
-                    <div class="form-group">
-                      <label >Marca</label>
-                      <input type="" class="form-control" name="marca" >
-                    </div>
-                    <div class="form-group">
-                      <label >Origen</label>
-                      <input type="" class="form-control" name="origen" >
-                    </div>
-                    <div class="form-group">
-                      <label >Ubicacion</label>
-                      <input type="" class="form-control" name="ubicacion" >
-                    </div>
-                    <!-- /.form-group -->
-                    <div class="form-group">
-                      <label >Estado del producto</label>
-                      <input type="" class="form-control" name="estado_producto" >
-                    </div>
-
-                    <div class="form-group">
-                      <label >Color</label>
-                      <input type="" class="form-control" name="color" >
-                    </div>
-                    <!-- /.form-group -->
                   </div>
-                  <!-- /.col -->
-                </div>
 
-                <!-- /.row -->
+
+
+                  <!-- /.card-body -->
               </div>
-                <div class="modal-footer justify-content-between">
-<!--                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
-                  <button type="submit" class="btn btn-success">Guardar</button>
-                </div>
-              </form>
-            </div>
             <!-- /.card -->
           </div>
         </div>
@@ -339,3 +282,27 @@
 <script src="View/dist/js/pages/dashboard.js"></script>
 </body>
 </html>
+
+<div class="modal fade" id="modal-lg">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Large Modal</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Aqui Contenido del centro       -->
+              <?php include "Operador.php"?>
+
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>

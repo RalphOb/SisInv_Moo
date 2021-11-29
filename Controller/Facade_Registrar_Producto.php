@@ -4,8 +4,8 @@
  * Importamos las bibliotecas necesarias para el funcionamiento
  * del sistema
  */
-#include('../Model/ModelFacadeProduct.php');
-include('Model/ModelFacadeProduct.php');
+include('../Model/ModelFacadeProduct.php');
+//include('Model/ModelFacadeProduct.php');
 
 
 /**

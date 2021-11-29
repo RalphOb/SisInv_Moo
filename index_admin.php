@@ -125,7 +125,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="index_admin.php" class="nav-link">
               <i class="nav-icon fas fa-home"></i>
               <p>
                 Principal
@@ -141,7 +141,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="admin_orden.php" class="nav-link">
               <i class="nav-icon fas fa-map-marked-alt"></i>
               <p>
                 Crear Orden
@@ -196,7 +196,7 @@
                 <h3 class="card-title">Inventario</h3>
               </div>
               <!-- /.card-header -->
-              <div class="card-body table-responsive p-0" style="height: 300px;">
+              <div class="card-body table-responsive p-0" style="align-content: center ">
                 <table class="table table-head-fixed text-nowrap">
                   <thead>
                   <tr>
@@ -205,20 +205,13 @@
                     <th>categoria</th>
                     <th>no_serie</th>
                     <th>cantidad</th>
-                    <th>fecha</th>
-                    <th>medida</th>
-                    <th>marca</th>
-                    <th>modelo</th>
-                    <th>origen</th>
-                    <th>ubicacion</th>
-                    <th>estado_producto</th>
-                    <th>color</th>
+
                   </tr>
                   </thead>
                   <tbody>
                   <?php
 
-	             include('Controller/Facade_Registrar_Producto.php');
+	             include('Controller/buscarController.php');
                  $producto = new Facade();
                 $arr = $producto ->todos();
 
