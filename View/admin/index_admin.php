@@ -198,45 +198,52 @@ error_reporting(0);
               <div class="card-header">
                 <h3 class="card-title">Inventario</h3>
               </div>
-              <!-- /.card-header -->
-              <div class="card-body table-responsive p-0" style="align-content: center ">
-                <table class="table table-head-fixed text-nowrap">
-                  <thead>
-                  <tr>
-                    <th>Identificador</th>
-                    <th>nombre</th>
-                    <th>categoria</th>
-                    <th>no_serie</th>
-                    <th>cantidad</th>
 
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <?php
-                  include_once($_SERVER['DOCUMENT_ROOT'].'/SisInv_Moo/paths.php');
-                 include(Facade.'buscarController.php');
-                 $producto = new Facade();
-                $arr = $producto ->todos();
+              <div class="col-12">
+                <div class="card">
 
-                  foreach($arr as $fila){
-                  ?>
+                  <!-- /.card-header -->
+                  <div class="card-body table-responsive p-0" style="height: 300px;">
+                    <table class="table table-head-fixed text-nowrap">
+                      <thead>
+                      <tr>
+                        <th>Identificador</th>
+                        <th>nombre</th>
+                        <th>categoria</th>
+                        <th>no_serie</th>
+                        <th>cantidad</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <?php
+                      include_once($_SERVER['DOCUMENT_ROOT'].'/SisInv_Moo/paths.php');
+                      include(Facade.'buscarController.php');
+                      $producto = new Facade();
+                      $arr = $producto ->todos();
 
-                  <tr>
-                    <td><?PHP echo $fila[0];?></td>
-                    <td><?PHP echo $fila[1];?></td>
-                    <td><?PHP echo $fila[2];?></td>
-                    <td><?PHP echo $fila[3];?></td>
-                    <td><?PHP echo $fila[4];?></td>
-                    <td><?PHP echo $fila[5];?></td>
-                    <td><?PHP echo $fila[6];?></td>
-                    <td><?PHP echo $fila[7];?></td>
-                    <td><?PHP echo $fila[8];?></td>
-                    <td><?PHP echo $fila[9];?></td>
-                  </tr>
-                  <?php } ?>
-                  </tbody>
-                </table>
+                      foreach($arr as $fila){
+                        ?>
+
+                        <tr>
+                          <td><?PHP echo $fila[0];?></td>
+                          <td><?PHP echo $fila[1];?></td>
+                          <td><?PHP echo $fila[2];?></td>
+                          <td><?PHP echo $fila[3];?></td>
+                          <td><?PHP echo $fila[4];?></td>
+
+
+                        </tr>
+                      <?php } ?>
+
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
               </div>
+
+
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
