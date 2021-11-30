@@ -207,7 +207,7 @@ error_reporting(0);
                     <table class="table table-head-fixed text-nowrap">
                       <thead>
                       <tr>
-                        <th>Identificador</th>
+
                         <th>nombre</th>
                         <th>categoria</th>
                         <th>no_serie</th>
@@ -217,7 +217,7 @@ error_reporting(0);
                       <tbody>
                       <?php
                       include_once($_SERVER['DOCUMENT_ROOT'].'/SisInv_Moo/paths.php');
-                      include(Facade.'buscarController.php');
+                      include(Facade.'Facade_Producto.php');
                       $producto = new Facade();
                       $arr = $producto ->todos();
 
@@ -225,7 +225,7 @@ error_reporting(0);
                         ?>
 
                         <tr>
-                          <td><?PHP echo $fila[0];?></td>
+
                           <td><?PHP echo $fila[1];?></td>
                           <td><?PHP echo $fila[2];?></td>
                           <td><?PHP echo $fila[3];?></td>
