@@ -1,13 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c17cf164-f86b-48ff-b76f-1889ae5eb618" name="Changes" comment="" />
+    <list default="true" id="c17cf164-f86b-48ff-b76f-1889ae5eb618" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Controller/Facade/Facade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/Factory/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/UserSessionModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Validation/login_val.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paths.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Facade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Facade_Registrar_Producto.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Facade/Facade_Producto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/buscarController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Facade/buscarController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/ModelFacadeProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/ModelFacadeProduct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/MySQL/xemc_mysql.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/MySQL/xemc_mysql.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Operador.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Abstract_Factory/Operador.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servicio.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Abstract_Factory/Servicio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServicioFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Abstract_Factory/ServicioFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServicioFactory1.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Abstract_Factory/ServicioFactory1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Serviciok1.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Abstract_Factory/Serviciok1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/admin/consulta_todos.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/admin/consulta_todos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/admin/registro_producto.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/admin/registro_producto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adm_registro.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/admin/adm_registro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_orden.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/admin/admin_orden.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/admin/index_admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/capt/index_user.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/View/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
@@ -25,14 +49,33 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/View" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Controller/Factory" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\SisInv_Moo\View" />
+      <recent name="C:\xampp\htdocs\SisInv_Moo\Controller\Factory" />
+      <recent name="C:\xampp\htdocs\SisInv_Moo\Model" />
       <recent name="C:\xampp\htdocs\SisInv_Moo" />
+      <recent name="C:\xampp\htdocs\SisInv_Moo\View" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\SisInv_Moo\View\capt" />
+      <recent name="C:\xampp\htdocs\SisInv_Moo\View\admin" />
+      <recent name="C:\xampp\htdocs\SisInv_Moo\Controller\Abstract_Factory" />
+      <recent name="C:\xampp\htdocs\SisInv_Moo\Controller\Facade" />
+      <recent name="C:\xampp\htdocs\SisInv_Moo\Controller" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Facade.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SisInv_Moo/Controller/Facade/Facade.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.Facade.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -43,6 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1637949120731</updated>
       <workItem from="1637949128390" duration="966000" />
+      <workItem from="1638243301506" duration="7002000" />
     </task>
     <servers />
   </component>
@@ -59,5 +103,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

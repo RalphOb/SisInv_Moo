@@ -8,68 +8,29 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="View/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Tempusdominus Bootstrap 4 -->
-  <link rel="stylesheet" href="View/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
   <!-- iCheck -->
-  <link rel="stylesheet" href="View/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- JQVMap -->
-  <link rel="stylesheet" href="View/plugins/jqvmap/jqvmap.min.css">
+  <link rel="stylesheet" href="../plugins/jqvmap/jqvmap.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="View/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
   <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="View/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Daterange picker -->
-  <link rel="stylesheet" href="View/plugins/daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
-  <link rel="stylesheet" href="View/plugins/summernote/summernote-bs4.min.css">
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script type="text/javascript">
-    google.charts.load('current', {'packages':['gauge']});
-    google.charts.setOnLoadCallback(drawChart);
-
-    function drawChart() {
-
-      var data = google.visualization.arrayToDataTable([
-        ['Label', 'Value'],
-        ['', 80],
-        ['', 55],
-        ['', 68]
-      ]);
-
-      var options = {
-        width: 400, height: 120,
-        redFrom: 90, redTo: 100,
-        yellowFrom:75, yellowTo: 90,
-        minorTicks: 5
-      };
-
-      var chart = new google.visualization.Gauge(document.getElementById('chart_div'));
-
-      chart.draw(data, options);
-
-      setInterval(function() {
-        data.setValue(0, 1, 40 + Math.round(5 * Math.random()));
-        chart.draw(data, options);
-      }, 800);
-      setInterval(function() {
-        data.setValue(1, 1, 20 + Math.round(7 * Math.random()));
-        chart.draw(data, options);
-      }, 700);
-      setInterval(function() {
-        data.setValue(2, 1, 60 + Math.round(2 * Math.random()));
-        chart.draw(data, options);
-      }, 500);
-    }
-  </script>
+  <link rel="stylesheet" href="../plugins/summernote/summernote-bs4.min.css">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
   <!-- Preloader -->
-  <div class="preloader flex-column justify-content-center align-items-center">
+  <div class="preloaders flex-column justify-content-center align-items-center">
     <i class="fas fa-info fa-2x animation__shake"></i>
   </div>
 
@@ -80,7 +41,7 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
-      
+
     </ul>
 
     <!-- Right navbar links -->
@@ -109,10 +70,10 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="View/dist/img/avatar.png" class="img-circle elevation-2" alt="User Image">
+          <img src="../dist/img/avatar.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Capturista</a>
+          <a href="#" class="d-block">Admin</a>
         </div>
       </div>
 
@@ -125,7 +86,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="" class="nav-link">
+            <a href="admin/index_admin.php" class="nav-link">
               <i class="nav-icon fas fa-home"></i>
               <p>
                 Principal
@@ -133,7 +94,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">
+            <a href="admin/adm_registro.html" class="nav-link">
               <i class="nav-icon fas fa-file-alt"></i>
               <p>
                 Registrar Producto
@@ -141,10 +102,10 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">
+            <a href="admin/admin_orden.php" class="nav-link">
               <i class="nav-icon fas fa-map-marked-alt"></i>
               <p>
-                Buscar Productos
+                Crear Orden
               </p>
             </a>
           </li>
@@ -172,7 +133,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">INVENTARIO</h1>
+            <h1 class="m-0">Crear Orden</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -191,41 +152,30 @@
 
         <div class="row">
           <div class="col-12">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Inventario</h3>
+              <div class="card">
+                  <div class="card-header">
+                      <h3 class="card-title">Pre-Paquetes</h3>
+                  </div>
+                  <div class="card-body">
+                      <center>
+                          <a data-toggle="modal" data-target="#modal-lg" class="btn btn-app">
+                              <i class="fas fa-box"></i> Paquete: Regular
+                          </a>
+                          <a class="btn btn-app">
+                              <i class="fas fa-box"></i> Paquete: Preventivo
+                          </a>
+                          <a class="btn btn-app">
+                              <i class="fas fa-box"></i> Custome
+                          </a>
+                      </center>
+
+
+                  </div>
+
+
+
+                  <!-- /.card-body -->
               </div>
-              <!-- /.card-header -->
-              <div class="card-body table-responsive p-0" style="height: 300px;">
-                <table class="table table-head-fixed text-nowrap">
-                  <thead>
-                  <tr>
-                    <th>Id</th>
-                    <th>Nombre</th>
-                    <th>CAtegoria</th>
-                    <th>serie</th>
-                    <th>Stock</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-
-
-
-
-
-
-                  <tr>
-                    <td>982</td>
-                    <td>Rocky Doe</td>
-                    <td>11-7-2014</td>
-                    <td><span class="tag tag-danger">Denied</span></td>
-                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.card-body -->
-            </div>
             <!-- /.card -->
           </div>
         </div>
@@ -242,7 +192,7 @@
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2021 <b>SisInv </a>.</strong>
+    <strong>Copyright &copy; 2014-2021 <b>SisInv </b>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
       <b>Version</b> 0.0.1
@@ -258,38 +208,63 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="View/plugins/jquery/jquery.min.js"></script>
+<script src="../plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
-<script src="View/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button)
 </script>
 <!-- Bootstrap 4 -->
-<script src="View/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- ChartJS -->
-<script src="View/plugins/chart.js/Chart.min.js"></script>
+<script src="../plugins/chart.js/Chart.min.js"></script>
 <!-- Sparkline -->
-<script src="View/plugins/sparklines/sparkline.js"></script>
+<script src="../plugins/sparklines/sparkline.js"></script>
 <!-- JQVMap -->
-<script src="View/plugins/jqvmap/jquery.vmap.min.js"></script>
-<script src="View/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<script src="../plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="../plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
 <!-- jQuery Knob Chart -->
-<script src="View/plugins/jquery-knob/jquery.knob.min.js"></script>
+<script src="../plugins/jquery-knob/jquery.knob.min.js"></script>
 <!-- daterangepicker -->
-<script src="View/plugins/moment/moment.min.js"></script>
-<script src="View/plugins/daterangepicker/daterangepicker.js"></script>
+<script src="../plugins/moment/moment.min.js"></script>
+<script src="../plugins/daterangepicker/daterangepicker.js"></script>
 <!-- Tempusdominus Bootstrap 4 -->
-<script src="View/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 <!-- Summernote -->
-<script src="View/plugins/summernote/summernote-bs4.min.js"></script>
+<script src="../plugins/summernote/summernote-bs4.min.js"></script>
 <!-- overlayScrollbars -->
-<script src="View/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
-<script src="View/dist/js/adminlte.js"></script>
+<script src="../dist/js/adminlte.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="View/dist/js/demo.js"></script>
+<script src="../dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="View/dist/js/pages/dashboard.js"></script>
+<script src="../dist/js/pages/dashboard.js"></script>
 </body>
 </html>
+<div class="modal fade" id="modal-lg">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Large Modal</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Aqui Contenido del centro       -->
+              <?php
+              include_once($_SERVER['DOCUMENT_ROOT'].'/SisInv_Moo/paths.php');
+              include(Abstract_Factory.'Operador.php');
+              ?>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>

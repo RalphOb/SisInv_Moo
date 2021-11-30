@@ -4,7 +4,8 @@
  * Importamos las bibliotecas necesarias para el funcionamiento
  * del sistema
  */
-include('Model/ModelFacadeProduct.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'/SisInv_Moo/paths.php');
+include(Model.'ModelFacadeProduct.php');
 //include('Model/ModelFacadeProduct.php');
 
 

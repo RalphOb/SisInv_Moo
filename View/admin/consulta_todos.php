@@ -21,8 +21,8 @@ Plan de calidad
                 </thead>
                 <tbody>
 <?php
-
-	include('../../Controller/Facade_Registrar_Producto.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'/SisInv_Moo/paths.php');
+	include(Controller.'Facade_Registrar_Producto.php');
   $producto = new Facade();
   $arr = $producto ->todos();
 

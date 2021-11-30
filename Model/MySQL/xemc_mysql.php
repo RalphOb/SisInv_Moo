@@ -72,7 +72,14 @@
 				$objetos[] = $array;
 			}
 			return $objetos;
-		}	
+		}
+		public function objeto($sql)
+		{
+			$this->conectar();
+			$result = $this->conexion->query($sql);
+			$array = $result->fetch_assoc();
+			return $array;
+		}
 
 		public function desconectar_mysql(){
 				mysql_close($this->conexion);
