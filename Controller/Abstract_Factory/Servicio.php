@@ -8,24 +8,22 @@ abstract class Servicio {
     public $Otros;
 
     function make() {
+        echo 'Verificando Disponibilidad...<br />';
         echo 'Creando'.$this->name.'<br />';
-        echo 'Preparando equipo Dispensario...<br />';
-        echo 'Preparando equipo Equipollenado...<br />';
-        echo 'Preparando equipo Controlinventario...<br />';
-        echo 'Preparando equipo Otros...<br />';
+
 
     }
 
     function search() {
-        echo 'Busca los productos en almacen';
+        echo 'Buscando los productos en almacen <br>';
     }
 
     function prepare() {
-        echo 'Prepara la orden de servicio';
+        echo 'Prepara la orden de servicio <br>';
     }
 
     function deliver() {
-        echo 'Entrega el KIT de servicio con: '.$this->Dispensario." ".$this->Controlinventario." ". $this->Equipollenado." ".$this->Otros;
+        echo 'El Kit Contiene:<br> '.$this->Dispensario.' <br>'.$this->Controlinventario.'<br> '. $this->Equipollenado." <br>".$this->Otros;
     }
 
     function getName() {

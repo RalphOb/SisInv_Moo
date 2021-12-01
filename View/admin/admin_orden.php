@@ -86,7 +86,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="admin/index_admin.php" class="nav-link">
+            <a href="index_admin.php" class="nav-link">
               <i class="nav-icon fas fa-home"></i>
               <p>
                 Principal
@@ -94,7 +94,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="admin/adm_registro.html" class="nav-link">
+            <a href="adm_registro.php" class="nav-link">
               <i class="nav-icon fas fa-file-alt"></i>
               <p>
                 Registrar Producto
@@ -102,7 +102,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="admin/admin_orden.php" class="nav-link">
+            <a href="admin_orden.php" class="nav-link">
               <i class="nav-icon fas fa-map-marked-alt"></i>
               <p>
                 Crear Orden
@@ -158,15 +158,15 @@
                   </div>
                   <div class="card-body">
                       <center>
-                          <a data-toggle="modal" data-target="#modal-lg" class="btn btn-app">
+                          <a data-toggle="modal" data-target="#modal-lgk1" class="btn btn-app">
                               <i class="fas fa-box"></i> Paquete: Regular
                           </a>
-                          <a class="btn btn-app">
+                          <a class="btn btn-app" data-toggle="modal"  data-target="#modal-lgk2">
                               <i class="fas fa-box"></i> Paquete: Preventivo
                           </a>
-                          <a class="btn btn-app">
-                              <i class="fas fa-box"></i> Custome
-                          </a>
+<!--                          <a class="btn btn-app">-->
+<!--                              <i class="fas fa-box"></i> Custome-->
+<!--                          </a>-->
                       </center>
 
 
@@ -243,11 +243,11 @@
 <script src="../dist/js/pages/dashboard.js"></script>
 </body>
 </html>
-<div class="modal fade" id="modal-lg">
+<div class="modal fade" id="modal-lgk1">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Large Modal</h4>
+                <h4 class="modal-title">Kit Regular</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -256,15 +256,40 @@
                 <!-- Aqui Contenido del centro       -->
               <?php
               include_once($_SERVER['DOCUMENT_ROOT'].'/SisInv_Moo/paths.php');
-              include(Abstract_Factory.'Operador.php');
+              include(Abstract_Factory.'Paquete1.php');
+
               ?>
             </div>
             <div class="modal-footer justify-content-between">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+
             </div>
         </div>
         <!-- /.modal-content -->
     </div>
     <!-- /.modal-dialog -->
+</div>
+<div class="modal fade" id="modal-lgk2">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Kit Preventivo</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Aqui Contenido del centro       -->
+        <?php
+        include_once($_SERVER['DOCUMENT_ROOT'].'/SisInv_Moo/paths.php');
+        include(Abstract_Factory.'Paquete2.php');
+        ?>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
 </div>
