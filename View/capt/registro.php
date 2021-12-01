@@ -101,7 +101,7 @@ if(isset($_SESSION['capturista']))
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="capt/index_user.php" class="nav-link">
+            <a href="index_user.php" class="nav-link">
               <i class="nav-icon fas fa-home"></i>
               <p>
                 Principal
