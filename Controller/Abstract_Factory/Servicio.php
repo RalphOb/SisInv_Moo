@@ -23,7 +23,7 @@ abstract class Servicio {
     }
 
     function deliver() {
-        echo 'El Kit Contiene:<br> '.$this->Dispensario.' <br>'.$this->Controlinventario.'<br> '. $this->Equipollenado." <br>".$this->Otros;
+        echo 'El Kit Contiene:<br> '.$this->Dispensario.' <br>'.$this->Controlinventario.'<br> '. $this->Equipollenado." <br>".$this->Otros."<br>";
     }
 
     function getName() {

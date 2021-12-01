@@ -4,7 +4,7 @@ class Serviciok1 extends Servicio {
     public function __construct() {
         $this->name = 'Servicio de Mantenimiento Regular';
         $this->Dispensario = 'cedazo';
-        $this->Equipollenado = 'artucho';
+        $this->Equipollenado = 'Cartucho';
         $this->Controlinventario = 'Sonda';
         $this->Otros = 'Empaques';
 
