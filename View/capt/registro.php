@@ -1,17 +1,17 @@
 <?php
 error_reporting(0);
 session_start();
-if(!isset($_SESSION['administrador']))
+if(!isset($_SESSION['capturista']))
 {
   header("Location: ../../index.php");
 }
-if(isset($_SESSION['capturista']))
-{
-  header("Location: ../../View/capt/index_user.php");
-}
 if(isset($_SESSION['administrador']))
+{
+  header("Location: ../../View/admin/index_admin.php");
+}
+if(isset($_SESSION['capturista']))
 
-  $usuario = $_SESSION['administrador'];
+  $usuario = $_SESSION['capturista'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,8 +43,9 @@ if(isset($_SESSION['administrador']))
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
+
   <!-- Preloader -->
-  <div class="preloaders flex-column justify-content-center align-items-center">
+  <div class="preloade flex-column justify-content-center align-items-center">
     <i class="fas fa-info fa-2x animation__shake"></i>
   </div>
 
@@ -78,12 +79,13 @@ if(isset($_SESSION['administrador']))
     <a href="index.html" class="brand-link">
       <span class="brand-text font-weight-light"><i class="fas fa-train"></i> SISINV 0.1</span>
     </a>
+
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="../dist/img/avatar4.png" class="img-circle elevation-2" alt="User Image">
+          <img src="../dist/img/avatar.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block"><?php echo ($usuario);?></a>
@@ -99,7 +101,7 @@ if(isset($_SESSION['administrador']))
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="index_admin.php" class="nav-link">
+            <a href="capt/index_user.php" class="nav-link">
               <i class="nav-icon fas fa-home"></i>
               <p>
                 Principal
@@ -107,19 +109,19 @@ if(isset($_SESSION['administrador']))
             </a>
           </li>
           <li class="nav-item">
-            <a href="orden.php" class="nav-link">
-              <i class="nav-icon fas fa-map-marked-alt"></i>
+            <a href="registro.html" class="nav-link">
+              <i class="nav-icon fas fa-file-alt"></i>
               <p>
-                Crear Orden
+                Registrar Producto
               </p>
             </a>
           </li>
-
           <li class="nav-item">
             <a href="../log_out.php" class="nav-link">
               <i class="nav-icon fas fa-user-slash"></i>
               <p>
                 Cerrar sesión
+
               </p>
             </a>
           </li>
@@ -129,6 +131,7 @@ if(isset($_SESSION['administrador']))
     </div>
     <!-- /.sidebar -->
   </aside>
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -146,63 +149,104 @@ if(isset($_SESSION['administrador']))
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
+
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
+
         <div class="row">
           <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Inventario</h3>
+                <h3 class="card-title">Registro de producto</h3>
               </div>
-              <div class="col-12">
-                <div class="card">
-                  <!-- /.card-header -->
-                  <div class="card-body table-responsive p-0" style="height: 300px;">
-                    <table class="table table-head-fixed text-nowrap">
-                      <thead>
-                      <tr>
-                        <th>Producto</th>
-                        <th>Categoria</th>
-                        <th>No. Serie</th>
-                        <th>Cantidad</th>
-                        <th>Ubicación</th>
-                        <th>Estado del producto</th>
-                      </tr>
-                      </thead>
-                      <tbody>
-                      <?php
-                      include_once($_SERVER['DOCUMENT_ROOT'].'/SisInv_Moo/paths.php');
-                      include(Facade.'Facade_Producto.php');
-                      $producto = new Facade();
-                      $arr = $producto ->todos();
+              <!-- /.card-header -->
+              <form method="post" action="../../Controller/Facade/Facade.php">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label >Nombre</label>
+                      <input type="" class="form-control" name="nombre">
+                    </div>
 
-                      foreach($arr as $fila){
-                        ?>
+                    <div class="form-group">
+                      <label >Categoria</label>
+                      <select class="form-control select2" style="width: 100% " name="categoria" required>
+                        <option selected="selected" value="" disabled>-- Selecione Categoría --</option>
+                        <option value="1">Accesorios de Dispensarios</option>
+                        <option value="2">Equipo de Monitoreo de Tanques y Control de Inventarios</option>
+                        <option value="3">Monitoreo</option>
+                        <option value="4">Sistema de Control Administrativo</option>
+                        <option value="5">Varios</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label >No.Serie</label>
+                      <input type="" class="form-control" name="no_serie" >
+                    </div>
+                    <div class="form-group">
+                      <label >Cantidad</label>
+                      <input type="number" class="form-control" name="cantidad" >
+                    </div>
+                    <!-- /.form-group -->
+                    <div class="form-group">
+                      <label >Fecha</label>
+                      <input type="date" class="form-control" name="fecha" >
+                    </div>
 
-                        <tr>
-
-                          <td><?PHP echo $fila[0];?></td>
-                          <td><?PHP echo $fila[1];?></td>
-                          <td><?PHP echo $fila[2];?></td>
-                          <td><?PHP echo $fila[3];?></td>
-                          <td><?PHP echo $fila[4];?></td>
-                          <td><?PHP echo $fila[5];?></td>
-
-
-                        </tr>
-                      <?php } ?>
-
-                      </tbody>
-                    </table>
+                    <div class="form-group">
+                      <label >Medida</label>
+                      <input type="" class="form-control" name="medida"  >
+                    </div>
+                    <!-- /.form-group -->
                   </div>
-                  <!-- /.card-body -->
+                  <!-- /.col -->
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label >Modelo</label>
+                      <input type="" class="form-control" name="modelo"  >
+                    </div>
+                    <div class="form-group">
+                      <label >Marca</label>
+                      <input type="" class="form-control" name="marca" >
+                    </div>
+                    <div class="form-group">
+                      <label >Origen</label>
+                      <input type="" class="form-control" name="origen" >
+                    </div>
+                    <div class="form-group">
+                      <label >Ubicacion</label>
+                      <input type="" class="form-control" name="ubicacion" >
+                    </div>
+                    <!-- /.form-group -->
+                    <div class="form-group">
+                      <label >Estado del producto</label>
+                      <select class="form-control select2" style="width: 100% " name="estado_producto" required>
+                        <option selected="selected" value="" disabled>-- Selecione condición --</option>
+                        <option value="Nuevo">Nuevo</option>
+                        <option value="Usado">Usado</option>
+                        <option value="Reparado">Reparado</option>
+                        <option value="Irreparable">Irreparable</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label >Color</label>
+                      <input type="" class="form-control" name="color" >
+                    </div>
+                    <!-- /.form-group -->
+                  </div>
+                  <!-- /.col -->
                 </div>
-                <!-- /.card -->
+
+                <!-- /.row -->
               </div>
-
-
-              <!-- /.card-body -->
+                <div class="modal-footer justify-content-between">
+<!--                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                  <button type="submit" class="btn btn-success">Guardar</button>
+                </div>
+              </form>
             </div>
             <!-- /.card -->
           </div>

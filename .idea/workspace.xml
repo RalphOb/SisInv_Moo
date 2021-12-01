@@ -2,17 +2,284 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c17cf164-f86b-48ff-b76f-1889ae5eb618" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/View/log_out.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Facade/Facade_Producto.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Facade/Facade_Producto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Factory/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Factory/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/ModelFacadeProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/ModelFacadeProduct.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/admin/adm_registro.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/admin/adm_registro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Validation/login_val.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Validation/login_val.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/.babelrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/.bundlewatch.config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/.gitpod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/.lgtm.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/.stylelintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/.stylelintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/CODE_OF_CONDUCT.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/ICON.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/ReadmeView.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Readme_View.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/admin/adm_registro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/admin/admin_orden.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/admin/consulta_todos.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/consulta_todos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/admin/index_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/admin/index_admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/admin/registro_producto.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/capt/index_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/capt/index_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/Gemfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/Gemfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/_includes/foot.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/_includes/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/_includes/head.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/_includes/navbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/_includes/preloader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/_includes/sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/_layouts/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/_layouts/page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/additional-styles.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/adminlte.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/adminlte.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/adminlte.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/adminlte.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/alt/adminlte.components.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/alt/adminlte.components.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/alt/adminlte.components.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/alt/adminlte.components.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/alt/adminlte.core.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/alt/adminlte.core.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/alt/adminlte.core.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/alt/adminlte.core.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/alt/adminlte.extra-components.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/alt/adminlte.extra-components.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/alt/adminlte.extra-components.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/alt/adminlte.extra-components.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/alt/adminlte.pages.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/alt/adminlte.pages.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/alt/adminlte.pages.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/alt/adminlte.pages.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/alt/adminlte.plugins.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/alt/adminlte.plugins.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/alt/adminlte.plugins.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/alt/adminlte.plugins.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/docs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/css/highlighter.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/img/AdminLTELogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/img/logo-xl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/img/logo-xs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/img/user1-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/img/user3-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/img/user4-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/img/user5-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/img/user6-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/img/user7-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/img/user8-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/js/adminlte.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/js/adminlte.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/js/adminlte.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/js/adminlte.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/js/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/js/pages/dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/js/pages/dashboard2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/js/pages/dashboard3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/bootstrap/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/css/all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/css/all.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/css/brands.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/css/brands.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/css/fontawesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/css/fontawesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/css/regular.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/css/regular.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/css/solid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/css/solid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/css/svg-with-js.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/css/svg-with-js.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/css/v4-shims.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/css/v4-shims.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/webfonts/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/webfonts/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/webfonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/webfonts/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/webfonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/webfonts/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/webfonts/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/webfonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/webfonts/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/webfonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/webfonts/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/webfonts/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/webfonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/webfonts/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/fontawesome-free/webfonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/jquery/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/jquery/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/jquery/jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/jquery/jquery.slim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/jquery/jquery.slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/jquery/jquery.slim.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/overlayScrollbars/css/OverlayScrollbars.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/overlayScrollbars/js/OverlayScrollbars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/overlayScrollbars/js/OverlayScrollbars.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/esm/popper-utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/esm/popper-utils.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/esm/popper-utils.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/esm/popper-utils.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/esm/popper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/esm/popper.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/esm/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/esm/popper.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/popper-utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/popper-utils.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/popper-utils.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/popper-utils.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/popper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/popper.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/popper.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/umd/popper-utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/umd/popper-utils.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/umd/popper-utils.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/umd/popper-utils.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/umd/popper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/umd/popper.js.flow" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/umd/popper.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/umd/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/assets/plugins/popper/umd/popper.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/browser-support.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/components/boxes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/components/cards.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/components/control-sidebar.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/components/direct-chat.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/components/main-header.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/components/main-sidebar.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/components/miscellaneous.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/components/plugins.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/components/ribbons.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/components/timeline.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/dependencies.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/faq.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/how-to-contribute.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/implementations.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/javascript/card-refresh.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/javascript/card-widget.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/javascript/control-sidebar.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/javascript/direct-chat.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/javascript/expandable-tables.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/javascript/iframe.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/javascript/layout.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/javascript/navbar-search.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/javascript/push-menu.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/javascript/sidebar-search.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/javascript/toasts.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/javascript/todo-list.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/javascript/treeview.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/layout.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/license.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/docs/upgrade-guide.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/head.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/header.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/iframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/index2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/index3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/js/app_2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/js/progress-bar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/UI/buttons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/UI/general.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/UI/icons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/UI/modals.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/UI/navbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/UI/ribbons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/UI/sliders.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/UI/timeline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/calendar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/charts/chartjs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/charts/flot.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/charts/inline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/charts/uplot.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/blank.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/contact-us.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/contacts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/e-commerce.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/faq.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/forgot-password-v2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/forgot-password.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/invoice-print.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/invoice.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/language-menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/legacy-user-menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/lockscreen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/login-v2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/pace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/project-add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/project-detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/project-edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/projects.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/recover-password-v2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/recover-password.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/register-v2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/examples/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/forms/advanced.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/forms/editors.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/forms/general.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/forms/validation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/gallery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/kanban.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/layout/boxed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/layout/collapsed-sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/layout/fixed-footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/layout/fixed-sidebar-custom.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/layout/fixed-sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/layout/fixed-topnav.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/layout/top-nav-sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/layout/top-nav.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/mailbox/compose.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/mailbox/mailbox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/mailbox/read-mail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/search/enhanced-results.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/search/enhanced.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/search/simple-results.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/search/simple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/tables/data.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/tables/jsgrid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/tables/simple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pages/widgets.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/starter.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/View/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -31,7 +298,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Controller/Factory" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SCAT_2021" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -43,10 +310,10 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\SisInv_Moo\View\capt" />
+      <recent name="C:\xampp\htdocs\SisInv_Moo\View" />
       <recent name="C:\xampp\htdocs\SisInv_Moo\View\admin" />
       <recent name="C:\xampp\htdocs\SisInv_Moo\Controller\Abstract_Factory" />
       <recent name="C:\xampp\htdocs\SisInv_Moo\Controller\Facade" />
-      <recent name="C:\xampp\htdocs\SisInv_Moo\Controller" />
     </key>
   </component>
   <component name="RunManager">
@@ -69,6 +336,7 @@
       <updated>1637949120731</updated>
       <workItem from="1637949128390" duration="966000" />
       <workItem from="1638243301506" duration="7002000" />
+      <workItem from="1638323566403" duration="7236000" />
     </task>
     <servers />
   </component>

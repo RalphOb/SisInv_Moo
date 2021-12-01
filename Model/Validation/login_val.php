@@ -17,13 +17,12 @@ if (isset($_POST['submit'])) {
         if ($conn['role'] == 1){
             $user = $uf->createUser("Administrator", $cliente);
             session_start();
-            $_SESSION['usuario'] = $cliente->getUsername();
-            header('Location: ../../View/admin/index_admin.php');
+            $_SESSION['administrador'] = $cliente->getUsername();
+            $user->Log_in();
         } elseif ($conn['role'] == 2){
             $user = $uf->createUser("Data_capture", $cliente);
             session_start();
-            $_SESSION['usuario'] = $cliente->getUsername();
-            header('Location: ../../View/capt/index_user.html');
+            $_SESSION['capturista'] = $cliente->getUsername();
             $user->Log_in();
         } else {
             header('Location: ../../index.php');

@@ -77,7 +77,7 @@ class FacadeProduct{
 					<strong>Los datos se registraron con éxito !!! </strong>
 				<center>
 			";
-		header('Location: ../../View/admin/index_admin.php');
+		header('Location: ../../View/capt/index_user.php');
 
 		}else{
 			$r = "

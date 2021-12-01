@@ -43,6 +43,7 @@ if(isset($_SESSION['administrador']))
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
+
   <!-- Preloader -->
   <div class="preloaders flex-column justify-content-center align-items-center">
     <i class="fas fa-info fa-2x animation__shake"></i>
@@ -78,6 +79,7 @@ if(isset($_SESSION['administrador']))
     <a href="index.html" class="brand-link">
       <span class="brand-text font-weight-light"><i class="fas fa-train"></i> SISINV 0.1</span>
     </a>
+
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
@@ -107,7 +109,7 @@ if(isset($_SESSION['administrador']))
             </a>
           </li>
           <li class="nav-item">
-            <a href="orden.php" class="nav-link">
+            <a href="admin_orden.php" class="nav-link">
               <i class="nav-icon fas fa-map-marked-alt"></i>
               <p>
                 Crear Orden
@@ -120,6 +122,7 @@ if(isset($_SESSION['administrador']))
               <i class="nav-icon fas fa-user-slash"></i>
               <p>
                 Cerrar sesión
+
               </p>
             </a>
           </li>
@@ -129,6 +132,7 @@ if(isset($_SESSION['administrador']))
     </div>
     <!-- /.sidebar -->
   </aside>
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -136,7 +140,7 @@ if(isset($_SESSION['administrador']))
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">INVENTARIO</h1>
+            <h1 class="m-0">Crear Orden</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -146,64 +150,37 @@ if(isset($_SESSION['administrador']))
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
+
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
+
         <div class="row">
           <div class="col-12">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Inventario</h3>
-              </div>
-              <div class="col-12">
-                <div class="card">
-                  <!-- /.card-header -->
-                  <div class="card-body table-responsive p-0" style="height: 300px;">
-                    <table class="table table-head-fixed text-nowrap">
-                      <thead>
-                      <tr>
-                        <th>Producto</th>
-                        <th>Categoria</th>
-                        <th>No. Serie</th>
-                        <th>Cantidad</th>
-                        <th>Ubicación</th>
-                        <th>Estado del producto</th>
-                      </tr>
-                      </thead>
-                      <tbody>
-                      <?php
-                      include_once($_SERVER['DOCUMENT_ROOT'].'/SisInv_Moo/paths.php');
-                      include(Facade.'Facade_Producto.php');
-                      $producto = new Facade();
-                      $arr = $producto ->todos();
-
-                      foreach($arr as $fila){
-                        ?>
-
-                        <tr>
-
-                          <td><?PHP echo $fila[0];?></td>
-                          <td><?PHP echo $fila[1];?></td>
-                          <td><?PHP echo $fila[2];?></td>
-                          <td><?PHP echo $fila[3];?></td>
-                          <td><?PHP echo $fila[4];?></td>
-                          <td><?PHP echo $fila[5];?></td>
-
-
-                        </tr>
-                      <?php } ?>
-
-                      </tbody>
-                    </table>
+              <div class="card">
+                  <div class="card-header">
+                      <h3 class="card-title">Pre-Paquetes</h3>
                   </div>
+                  <div class="card-body">
+                      <center>
+                          <a data-toggle="modal" data-target="#modal-lgk1" class="btn btn-app">
+                              <i class="fas fa-box"></i> Paquete: Regular
+                          </a>
+                          <a class="btn btn-app" data-toggle="modal"  data-target="#modal-lgk2">
+                              <i class="fas fa-box"></i> Paquete: Preventivo
+                          </a>
+<!--                          <a class="btn btn-app">-->
+<!--                              <i class="fas fa-box"></i> Custome-->
+<!--                          </a>-->
+                      </center>
+
+
+                  </div>
+
+
+
                   <!-- /.card-body -->
-                </div>
-                <!-- /.card -->
               </div>
-
-
-              <!-- /.card-body -->
-            </div>
             <!-- /.card -->
           </div>
         </div>
@@ -236,38 +213,88 @@ if(isset($_SESSION['administrador']))
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
+<script src="../plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
-<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button)
 </script>
 <!-- Bootstrap 4 -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- ChartJS -->
-<script src="plugins/chart.js/Chart.min.js"></script>
+<script src="../plugins/chart.js/Chart.min.js"></script>
 <!-- Sparkline -->
-<script src="plugins/sparklines/sparkline.js"></script>
+<script src="../plugins/sparklines/sparkline.js"></script>
 <!-- JQVMap -->
-<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
-<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<script src="../plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="../plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
 <!-- jQuery Knob Chart -->
-<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<script src="../plugins/jquery-knob/jquery.knob.min.js"></script>
 <!-- daterangepicker -->
-<script src="plugins/moment/moment.min.js"></script>
-<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<script src="../plugins/moment/moment.min.js"></script>
+<script src="../plugins/daterangepicker/daterangepicker.js"></script>
 <!-- Tempusdominus Bootstrap 4 -->
-<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 <!-- Summernote -->
-<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<script src="../plugins/summernote/summernote-bs4.min.js"></script>
 <!-- overlayScrollbars -->
-<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
-<script src="dist/js/adminlte.js"></script>
+<script src="../dist/js/adminlte.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script>
+<script src="../dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="dist/js/pages/dashboard.js"></script>
+<script src="../dist/js/pages/dashboard.js"></script>
 </body>
 </html>
+<div class="modal fade" id="modal-lgk1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Kit Regular</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Aqui Contenido del centro       -->
+              <?php
+              include_once($_SERVER['DOCUMENT_ROOT'].'/SisInv_Moo/paths.php');
+              include(Abstract_Factory.'Paquete1.php');
+
+              ?>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<div class="modal fade" id="modal-lgk2">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Kit Preventivo</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Aqui Contenido del centro       -->
+        <?php
+        include_once($_SERVER['DOCUMENT_ROOT'].'/SisInv_Moo/paths.php');
+        include(Abstract_Factory.'Paquete2.php');
+        ?>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>

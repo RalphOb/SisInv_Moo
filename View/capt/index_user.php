@@ -1,17 +1,17 @@
 <?php
 error_reporting(0);
 session_start();
-if(!isset($_SESSION['administrador']))
+if(!isset($_SESSION['capturista']))
 {
   header("Location: ../../index.php");
 }
-if(isset($_SESSION['capturista']))
-{
-  header("Location: ../../View/capt/index_user.php");
-}
 if(isset($_SESSION['administrador']))
+{
+  header("Location: ../../View/admin/index_admin.php");
+}
+if(isset($_SESSION['capturista']))
 
-  $usuario = $_SESSION['administrador'];
+  $usuario = $_SESSION['capturista'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,6 +43,7 @@ if(isset($_SESSION['administrador']))
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
+
   <!-- Preloader -->
   <div class="preloaders flex-column justify-content-center align-items-center">
     <i class="fas fa-info fa-2x animation__shake"></i>
@@ -78,12 +79,13 @@ if(isset($_SESSION['administrador']))
     <a href="index.html" class="brand-link">
       <span class="brand-text font-weight-light"><i class="fas fa-train"></i> SISINV 0.1</span>
     </a>
+
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="../dist/img/avatar4.png" class="img-circle elevation-2" alt="User Image">
+          <img src="../dist/img/avatar.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block"><?php echo ($usuario);?></a>
@@ -99,7 +101,7 @@ if(isset($_SESSION['administrador']))
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="index_admin.php" class="nav-link">
+            <a href="index_user.php" class="nav-link">
               <i class="nav-icon fas fa-home"></i>
               <p>
                 Principal
@@ -107,19 +109,19 @@ if(isset($_SESSION['administrador']))
             </a>
           </li>
           <li class="nav-item">
-            <a href="orden.php" class="nav-link">
-              <i class="nav-icon fas fa-map-marked-alt"></i>
+            <a href="registro.php" class="nav-link">
+              <i class="nav-icon fas fa-file-alt"></i>
               <p>
-                Crear Orden
+                Registrar Producto
               </p>
             </a>
           </li>
-
           <li class="nav-item">
             <a href="../log_out.php" class="nav-link">
               <i class="nav-icon fas fa-user-slash"></i>
               <p>
                 Cerrar sesión
+
               </p>
             </a>
           </li>
@@ -129,6 +131,7 @@ if(isset($_SESSION['administrador']))
     </div>
     <!-- /.sidebar -->
   </aside>
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -146,22 +149,27 @@ if(isset($_SESSION['administrador']))
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
+
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
+
         <div class="row">
           <div class="col-12">
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">Inventario</h3>
               </div>
+
               <div class="col-12">
                 <div class="card">
+
                   <!-- /.card-header -->
                   <div class="card-body table-responsive p-0" style="height: 300px;">
                     <table class="table table-head-fixed text-nowrap">
                       <thead>
                       <tr>
+
                         <th>Producto</th>
                         <th>Categoria</th>
                         <th>No. Serie</th>
@@ -178,19 +186,19 @@ if(isset($_SESSION['administrador']))
                       $arr = $producto ->todos();
 
                       foreach($arr as $fila){
-                        ?>
+                      ?>
 
-                        <tr>
+                      <tr>
 
-                          <td><?PHP echo $fila[0];?></td>
-                          <td><?PHP echo $fila[1];?></td>
-                          <td><?PHP echo $fila[2];?></td>
-                          <td><?PHP echo $fila[3];?></td>
-                          <td><?PHP echo $fila[4];?></td>
-                          <td><?PHP echo $fila[5];?></td>
+                        <td><?PHP echo $fila[0];?></td>
+                        <td><?PHP echo $fila[1];?></td>
+                        <td><?PHP echo $fila[2];?></td>
+                        <td><?PHP echo $fila[3];?></td>
+                        <td><?PHP echo $fila[4];?></td>
+                        <td><?PHP echo $fila[5];?></td>
 
 
-                        </tr>
+                      </tr>
                       <?php } ?>
 
                       </tbody>
