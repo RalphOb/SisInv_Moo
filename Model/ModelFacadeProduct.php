@@ -10,6 +10,7 @@ require_once("MySQL/xemc_mysql.php");
  * Se define la tabla para almacenar los datos 
  */
 define("tabla", "producto");
+define("view_Productos", "vproductos");
 
 
 
@@ -93,8 +94,8 @@ class FacadeProduct{
 
 	function obtenerTodos(){
 		$this->cemc->conectar();
-		#$sql ="SELECT * FROM ". tabla." ORDER BY id_producto DESC";
-		$sql ="SELECT * FROM ". tabla;
+		#$sql ="SELECT * FROM ". view_Productos ." ORDER BY Categoria DESC";
+		$sql ="SELECT * FROM ". view_Productos;
         $query = $this->cemc->objetos($sql);
         return $query;
         $r = "";

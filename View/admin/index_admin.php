@@ -208,10 +208,12 @@ error_reporting(0);
                       <thead>
                       <tr>
 
-                        <th>nombre</th>
-                        <th>categoria</th>
-                        <th>no_serie</th>
-                        <th>cantidad</th>
+                        <th>Producto</th>
+                        <th>Categoria</th>
+                        <th>No. Serie</th>
+                        <th>Cantidad</th>
+                        <th>Ubicación</th>
+                        <th>Estado del producto</th>
                       </tr>
                       </thead>
                       <tbody>
@@ -226,10 +228,12 @@ error_reporting(0);
 
                         <tr>
 
+                          <td><?PHP echo $fila[0];?></td>
                           <td><?PHP echo $fila[1];?></td>
                           <td><?PHP echo $fila[2];?></td>
                           <td><?PHP echo $fila[3];?></td>
                           <td><?PHP echo $fila[4];?></td>
+                          <td><?PHP echo $fila[5];?></td>
 
 
                         </tr>

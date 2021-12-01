@@ -207,7 +207,14 @@
 
                     <div class="form-group">
                       <label >Categoria</label>
-                      <input type="" class="form-control" name="categoria" >
+                      <select class="form-control select2" style="width: 100% " name="categoria" required>
+                        <option selected="selected" value="" disabled>-- Selecione Categoría --</option>
+                        <option value="1">Accesorios de Dispensarios</option>
+                        <option value="2">Equipo de Monitoreo de Tanques y Control de Inventarios</option>
+                        <option value="3">Monitoreo</option>
+                        <option value="4">Sistema de Control Administrativo</option>
+                        <option value="5">Varios</option>
+                      </select>
                     </div>
                     <div class="form-group">
                       <label >No.Serie</label>
@@ -252,7 +259,13 @@
                     <!-- /.form-group -->
                     <div class="form-group">
                       <label >Estado del producto</label>
-                      <input type="" class="form-control" name="estado_producto" >
+                      <select class="form-control select2" style="width: 100% " name="estado_producto" required>
+                        <option selected="selected" value="" disabled>-- Selecione condición --</option>
+                        <option value="Nuevo">Nuevo</option>
+                        <option value="Usado">Usado</option>
+                        <option value="Reparado">Reparado</option>
+                        <option value="Irreparable">Irreparable</option>
+                      </select>
                     </div>
 
                     <div class="form-group">
