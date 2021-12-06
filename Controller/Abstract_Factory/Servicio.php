@@ -2,11 +2,7 @@
 require_once($_SERVER['DOCUMENT_ROOT'].'/SisInv_Moo/paths.php');
 require_once (Model.'ModelFacadeProduct.php');
 abstract class Servicio{
-    public $name;
-    public $Dispensario;
-    public $Equipollenado;
-    public $Controlinventario;
-    public $Otros;
+
 
     public function __construct()
     {

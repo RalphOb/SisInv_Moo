@@ -98,7 +98,6 @@ class FacadeProduct
 	function obtenerTodos()
 	{
 		$this->cemc->conectar();
-		#$sql ="SELECT * FROM ". view_Productos ." ORDER BY Categoria DESC";
 		$sql = "SELECT * FROM " . view_Productos;
 		$query = $this->cemc->objetos($sql);
 		return $query;
