@@ -109,7 +109,7 @@ if(isset($_SESSION['administrador']))
             </a>
           </li>
           <li class="nav-item">
-            <a href="admin_orden.php" class="nav-link">
+            <a href="orden.php" class="nav-link">
               <i class="nav-icon fas fa-map-marked-alt"></i>
               <p>
                 Crear Orden
