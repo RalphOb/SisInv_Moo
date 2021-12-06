@@ -176,23 +176,17 @@ if(isset($_SESSION['administrador']))
                       include(Facade.'Facade_Producto.php');
                       $producto = new Facade();
                       $arr = $producto ->todos();
-
                       foreach($arr as $fila){
                         ?>
-
                         <tr>
-
                           <td><?PHP echo $fila[0];?></td>
                           <td><?PHP echo $fila[1];?></td>
                           <td><?PHP echo $fila[2];?></td>
                           <td><?PHP echo $fila[3];?></td>
                           <td><?PHP echo $fila[4];?></td>
                           <td><?PHP echo $fila[5];?></td>
-
-
                         </tr>
                       <?php } ?>
-
                       </tbody>
                     </table>
                   </div>
@@ -200,19 +194,14 @@ if(isset($_SESSION['administrador']))
                 </div>
                 <!-- /.card -->
               </div>
-
-
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
           </div>
         </div>
-
         <!-- Small boxes (Stat box) -->
-
         <!-- /.row -->
         <!-- Main row -->
-
         <!-- /.row (main row) -->
       </div><!-- /.container-fluid -->
     </section>
@@ -226,7 +215,6 @@ if(isset($_SESSION['administrador']))
       <b>Version</b> 0.0.1
     </div>
   </footer>
-
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
