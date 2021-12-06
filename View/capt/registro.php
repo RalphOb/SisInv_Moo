@@ -213,11 +213,19 @@ if(isset($_SESSION['capturista']))
                     </div>
                     <div class="form-group">
                       <label >Origen</label>
-                      <input type="" class="form-control" name="origen" >
+                        <select class="form-control select2" style="width: 100% " name="origen" required>
+                            <option selected="selected" value="" disabled>-- Selecione origen --</option>
+                            <option value="Nacional">Nacional</option>
+                            <option value="Internacional">Internacional</option>
+                        </select>
                     </div>
                     <div class="form-group">
                       <label >Ubicacion</label>
-                      <input type="" class="form-control" name="ubicacion" >
+                        <select class="form-control select2" style="width: 100% " name="ubicacion" required>
+                            <option selected="selected" value="" disabled>-- Selecione ubicación --</option>
+                            <option value="Almacen">Almacen</option>
+                            <option value="Bodega">Bodega</option>
+                        </select>
                     </div>
                     <!-- /.form-group -->
                     <div class="form-group">

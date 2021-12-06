@@ -7,16 +7,11 @@ abstract class ServicioFactory
     public function orderService($type)
     {
         $service = $this->createService($type);
-        $service->make();
-        $service->search();
-        $service->prepare();
-        $service->deliver();
+        $service->prod1();
+        $service->prod2();
+        $service->prod3();
+        $service->prod4();
         return $service;
     }
 }
-
 ?>
-
-<!--busca-->
-<!--prepara-->
-<!--entrega-->

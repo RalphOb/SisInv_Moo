@@ -17,10 +17,12 @@ define("view_Productos", "vproductos");
 /**
  * Se creo la clase principa para alamcenar los productos
  */
-class FacadeProduct{
+class FacadeProduct
+{
 	private $cemc;
 
-	public function __construct(){
+	public function __construct()
+	{
 		$this->cemc = new Mysql();
 	}
 
@@ -28,18 +30,19 @@ class FacadeProduct{
 	 * [saveProduct Método para almacenar datos en la DB y controlar los errores ]
 	 * @return [message] [Inserción correcta o erronea]
 	 */
-	function saveProduct( $nombre
-						, $categoria
-						, $no_serie
-						, $cantidad
-						, $fecha
-						, $medida
-						, $marca
-						, $modelo
-						, $origen
-						, $ubicacion
-						, $estado_producto
-						, $color){
+	function saveProduct($nombre
+		,                $categoria
+		,                $no_serie
+		,                $cantidad
+		,                $fecha
+		,                $medida
+		,                $marca
+		,                $modelo
+		,                $origen
+		,                $ubicacion
+		,                $estado_producto
+		,                $color)
+	{
 		$this->cemc->conectar();
 		$p1 = "INSERT INTO " . tabla;
 		$p2 = $p1 . " (nombre
@@ -71,15 +74,15 @@ class FacadeProduct{
 		$result = $this->cemc->consulta_mysqli($p3);
 		$this->cemc->desconectar();
 		$r = "";
-		if($result > 0){
+		if ($result > 0) {
 			$r = "
 				<center>
 					<strong>Los datos se registraron con éxito !!! </strong>
 				<center>
 			";
-		header('Location: ../../View/capt/index_user.php');
+			header('Location: ../../View/capt/index_user.php');
 
-		}else{
+		} else {
 			$r = "
 				<center>
 					<strong>
@@ -87,28 +90,42 @@ class FacadeProduct{
 					</strong>
 				</center>
 			";
-		}	
+		}
 		return $r;
 	}
 
 
-	function obtenerTodos(){
+	function obtenerTodos()
+	{
 		$this->cemc->conectar();
 		#$sql ="SELECT * FROM ". view_Productos ." ORDER BY Categoria DESC";
-		$sql ="SELECT * FROM ". view_Productos;
-        $query = $this->cemc->objetos($sql);
-        return $query;
-        $r = "";
-		if($resultado > 0){
-		 	$r = "";
-		}
-		else{
-		 	$r = "";
+		$sql = "SELECT * FROM " . view_Productos;
+		$query = $this->cemc->objetos($sql);
+		return $query;
+		$r = "";
+		if ($resultado > 0) {
+			$r = "";
+		} else {
+			$r = "";
 		}
 		return $r;
 	}
 
-
+	function updateProductoPaquete($producto)
+	{
+		$this->cemc->conectar();
+		$sql = "Select * from producto where nombre = '".$producto."';";
+        $query = $this->cemc->objeto($sql);
+		$stockDescuento = 1;
+		if ($query['cantidad'] < 1){
+			echo "Stock insuficiente de: $producto <br>";
+		} else {
+			$stockActual = $reg = $query['cantidad'];
+			$stockActual -= $stockDescuento;
+			$consulta = "Update producto set cantidad = " . $stockActual . " where nombre = '" . $producto . "';";
+			$query = $this->cemc->consulta_mysqli($consulta);
+		}
+	}
 }
 
 ?>

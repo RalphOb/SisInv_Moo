@@ -34,9 +34,9 @@
 			}
 
 		public function consulta_mysql($sql){
-				$result = mysql_query($sql, $this->conexion);
+				$result = mysqli_query($sql, $this->conexion);
 				if(!$result){
-					echo "MySQL ERROR: " . mysql_error();
+					echo "MySQL ERROR: " . mysqli_error();
 				}
 				return $result;
 			}

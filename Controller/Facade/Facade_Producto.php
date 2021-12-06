@@ -13,22 +13,20 @@ include(Model.'ModelFacadeProduct.php');
  */
 class facade{
 	
-	private $producto;
-	private $xemc;
-
-	private $id_producto;
-
-	private $nombre;
-	private $categoria;
-	private $no_serie;
-	private $cantidad;
-	private $fecha;
-	private $medida;
-	private $marca;
-	private $modelo;
-	private $origen;
-	private $ubicacion;
-	private $estado_producto;
+	protected $producto;
+	protected $xemc;
+	protected $id_producto;
+	protected $nombre;
+	protected $categoria;
+	protected $no_serie;
+	protected $cantidad;
+	protected $fecha;
+	protected $medida;
+	protected $marca;
+	protected $modelo;
+	protected $origen;
+	protected $ubicacion;
+	protected $estado_producto;
 	private $color;
 
 	/**

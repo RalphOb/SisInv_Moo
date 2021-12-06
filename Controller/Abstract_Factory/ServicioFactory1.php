@@ -11,11 +11,4 @@ class ServicioFactory1 extends ServicioFactory {
     }
     }
 }
-
 ?>
-
-<!--cedazo-->
-<!--cartucho-->
-<!--sonda-->
-<!--empaques-->
-

@@ -1,39 +1,25 @@
 <?php
-
+//Paquete Regular
 class Serviciok1 extends Servicio {
     public function __construct() {
-        $this->name = 'Servicio de Mantenimiento Regular';
-        $this->Dispensario = 'cedazo';
-        $this->Equipollenado = 'Cartucho';
-        $this->Controlinventario = 'Sonda';
-        $this->Otros = 'Empaques';
+        parent::__construct();
 
-//        array
-//        $prod = array($this->name,$this->Dispensario,$this->Equipollenado,$this->Controlinventario,$this->Otros);
-//        echo "<pre>";
-//            print_r($prod);
-//             echo "<pre>";
-
-
-
-
+        $nombre = $this->name = 'Servicio de Mantenimiento Regular';
+        $disp = $this->Dispensario = 'Cedazo';
+        $llenado = $this->Equipollenado = 'Cartucho';
+        $cinv = $this->Controlinventario = 'Sonda';
+        $otro = $this->Otros = 'Empaque';
     }
 }
-
+//Paquete Preventivo
 class Serviciok2 extends Servicio {
     public function __construct() {
-        $this->name = 'Servicio de Mantenimiento Preventivo';
-        $this->Dispensario = "Sensores";
-        $this->Equipollenado = 'Cables';
-        $this->Controlinventario = 'Regla';
-        $this->Otros = 'Pasta';
-
-
-//        $prod = array($this->name,$this->Dispensario,$this->Equipollenado,$this->Controlinventario,$this->Otros);
-//        echo "<pre>";
-//        print_r($prod);
-//        echo "<pre>";
-    }}
-
-
+        parent::__construct();
+        $nombre = $this->name = 'Servicio de Mantenimiento Preventivo';
+        $disp = $this->Dispensario = "Sensores";
+        $llenado = $this->Equipollenado = 'Cables';
+        $cinv = $this->Controlinventario = 'Regla';
+        $otro = $this->Otros = 'Pasta';
+    }
+}
 ?>
