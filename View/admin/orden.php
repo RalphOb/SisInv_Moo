@@ -163,10 +163,10 @@ if(isset($_SESSION['administrador']))
                   </div>
                   <div class="card-body">
                       <center>
-                          <a data-toggle="modal" data-target="#modal-lgk1" class="btn btn-app">
+                          <a href="pk1.php" class="btn btn-app">
                               <i class="fas fa-box"></i> Paquete: Regular
                           </a>
-                          <a class="btn btn-app" data-toggle="modal"  data-target="#modal-lgk2">
+                          <a href="pk2.php" class="btn btn-app" >
                               <i class="fas fa-box"></i> Paquete: Preventivo
                           </a>
 <!--                          <a class="btn btn-app">-->
@@ -259,11 +259,7 @@ if(isset($_SESSION['administrador']))
             </div>
             <div class="modal-body">
                 <!-- Aqui Contenido del centro       -->
-              <?php
-              include_once($_SERVER['DOCUMENT_ROOT'].'/SisInv_Moo/paths.php');
-              include(Abstract_Factory.'Paquete1.php');
 
-              ?>
             </div>
             <div class="modal-footer justify-content-between">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -285,10 +281,7 @@ if(isset($_SESSION['administrador']))
       </div>
       <div class="modal-body">
         <!-- Aqui Contenido del centro       -->
-        <?php
-        include_once($_SERVER['DOCUMENT_ROOT'].'/SisInv_Moo/paths.php');
-        include(Abstract_Factory.'Paquete2.php');
-        ?>
+
       </div>
       <div class="modal-footer justify-content-between">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
